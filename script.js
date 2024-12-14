@@ -55,11 +55,8 @@ window.onload = function CalcularIdade() {
         }
         span[0].innerHTML = novoAno;
         span[1].innerHTML = novoMes;
-<<<<<<< HEAD
         span[2].innerHTML = novoDia; 
-=======
         span[2].innerHTML = novoDia;
->>>>>>> 5818d7a325dc3e3fb131e2227e5851d275069513
     }
 
     const verificaDia = () => {
@@ -103,12 +100,7 @@ window.onload = function CalcularIdade() {
             return true;
         }
     }
-<<<<<<< HEAD
    submit.addEventListener("click", () => {
-=======
-
-    submit.addEventListener("click", () => {
->>>>>>> 5818d7a325dc3e3fb131e2227e5851d275069513
         let diaValido = verificaDia();
         let mesValido = verificaMes();
         let anoValido = verificaAno();
