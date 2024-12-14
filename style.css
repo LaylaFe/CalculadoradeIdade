@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 94%);
+    font-weight: 700;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 700px;
+    height: 550px;
+    border-top-right-radius: 170px;
+}
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    width: 480px;
+    justify-content: space-around;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+}
+.entradas {
+    display:flex;
+    flex-direction: column;
+}
+.entradas label {
+    letter-spacing: 0.2rem;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.entradas input {
+    width: 140px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
+    color: hsl(0, 0%, 8%);
+}
+.entradas input:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+    outline: none;
+}
+.erro {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    color: hsl(0, 100%, 67%);
+    text-transform: none;
+    margin-top: 10px;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.linha {
+    width: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+button {
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    cursor: pointer;
+    transition: .3s ease;
+}
+button:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+.resultado {
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: -20px;
+    color: hsl(0, 0%, 8%);
+}
+span {
+    counter-reset: hsl(259, 100%, 65%);
+}
+
+@media (max-width:600px) {
+    .calculadora{
+        width: 350px;
+        height: 430px;
+        padding: 30px;
+        border-bottom-right-radius: 100px;
+    }
+    .container{
+        width: 100%;
+    }
+    .entradas input{ 
+        width: 90px;
+        font-size: 20px;
+        padding: 15px;
+    }
+    .erro {
+        width: 90px;
+    }
+    .button {
+        margin-top: 20px;
+    }
+    button img{
+        width:  25px;
+    }
+    .linha2 {
+        border: 1px solid hsl(0, 0%, 86%);
+        width: 100%;
+    }
+    .resultado {
+        font-size: 50px;
+    }
+}
