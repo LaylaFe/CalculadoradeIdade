@@ -89,7 +89,10 @@ button:hover{
 span {
     counter-reset: hsl(259, 100%, 65%);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5818d7a325dc3e3fb131e2227e5851d275069513
 @media (max-width:600px) {
     .calculadora{
         width: 350px;
