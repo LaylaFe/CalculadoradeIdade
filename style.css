@@ -1,127 +1,156 @@
+/* Define o box-sizing para incluir padding e border no tamanho total dos elementos */
 *{
     box-sizing: border-box;
 }
+
+/* Estilos para o corpo da página */
 body{
-    font-family: "Poppins", sans-serif;
-    background-color: hsl(0, 0%, 94%);
-    font-weight: 700;
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão como Poppins */
+    background-color: hsl(0, 0%, 94%); /* Define a cor de fundo */
+    font-weight: 700; /* Define a espessura da fonte como 700 */
 }
+
+/* Estilos para o elemento principal */
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    align-items: center; /* Centraliza itens verticalmente */
+    height: 100vh; /* Define a altura do main como 100% da altura da janela */
 }
+
+/* Estilos para a calculadora */
 .calculadora{
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    width: 700px;
-    height: 550px;
-    border-top-right-radius: 170px;
+    background-color: #fff; /* Define a cor de fundo como branco */
+    padding: 40px; /* Define o padding interno */
+    border-radius: 20px; /* Define o raio das bordas */
+    width: 700px; /* Define a largura */
+    height: 550px; /* Define a altura */
+    border-top-right-radius: 170px; /* Define o raio da borda superior direita */
 }
+
+/* Estilos para o container das entradas */
 .conteiner {
-    display: flex;
-    flex-direction: row;
-    width: 480px;
-    justify-content: space-around;
-    color: hsl(0, 1%, 44%);
-    text-transform: uppercase;
+    display: flex; /* Usa flexbox para alinhar itens */
+    flex-direction: row; /* Define a direção dos itens como fila */
+    width: 480px; /* Define a largura */
+    justify-content: space-around; /* Distribui itens com espaçamento ao redor */
+    color: hsl(0, 1%, 44%); /* Define a cor do texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
 }
+
+/* Estilos para os blocos de entrada */
 .entradas {
-    display:flex;
-    flex-direction: column;
+    display: flex; /* Usa flexbox para alinhar itens */
+    flex-direction: column; /* Define a direção dos itens como coluna */
 }
+
+/* Estilos para os labels dentro das entradas */
 .entradas label {
-    letter-spacing: 0.2rem;
-    font-size: 12px;
-    margin-bottom: 5px;
+    letter-spacing: 0.2rem; /* Define o espaçamento entre letras */
+    font-size: 12px; /* Define o tamanho da fonte */
+    margin-bottom: 5px; /* Define a margem inferior */
 }
+
+/* Estilos para os inputs dentro das entradas */
 .entradas input {
-    width: 140px;
-    padding: 10px;
-    padding-left: 20px;
-    font-size: 32px;
-    font-weight: 700;
-    border-radius: 8px;
-    border: 1px solid hsl(0, 0%, 86%);
-    color: hsl(0, 0%, 8%);
+    width: 140px; /* Define a largura */
+    padding: 10px; /* Define o padding interno */
+    padding-left: 20px; /* Define o padding interno à esquerda */
+    font-size: 32px; /* Define o tamanho da fonte */
+    font-weight: 700; /* Define a espessura da fonte */
+    border-radius: 8px; /* Define o raio das bordas */
+    border: 1px solid hsl(0, 0%, 86%); /* Define a cor da borda */
+    color: hsl(0, 0%, 8%); /* Define a cor do texto */
 }
+
+/* Estilos para os inputs quando estão em foco */
 .entradas input:focus{
-    border: 1px solid hsl(259, 100%, 65%);
-    outline: none;
+    border: 1px solid hsl(259, 100%, 65%); /* Define a cor da borda ao focar */
+    outline: none; /* Remove o outline padrão */
 }
+
+/* Estilos para a div de erro */
 .erro {
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 400;
-    color: hsl(0, 100%, 67%);
-    text-transform: none;
-    margin-top: 10px;
+    font-size: 12px; /* Define o tamanho da fonte */
+    font-style: italic; /* Define o estilo da fonte como itálico */
+    font-weight: 400; /* Define a espessura da fonte */
+    color: hsl(0, 100%, 67%); /* Define a cor do texto */
+    text-transform: none; /* Define que o texto não será transformado */
+    margin-top: 10px; /* Define a margem superior */
 }
+
+/* Estilos para o botão e suas linhas */
 .button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex; /* Usa flexbox para alinhar itens */
+    flex-direction: row; /* Define a direção dos itens como fila */
+    align-items: center; /* Alinha itens no centro verticalmente */
 }
+
+/* Linha horizontal acima do botão */
 .linha {
-    width: 100%;
-    border-bottom: 1px solid hsl(0, 0%, 86%);
+    width: 100%; /* Define a largura completa */
+    border-bottom: 1px solid hsl(0, 0%, 86%); /* Define a cor da borda inferior */
 }
+
+/* Estilos para o botão */
 button {
-    padding: 20px;
-    border: none;
-    border-radius: 50%;
-    background-color: hsl(259, 100%, 65%);
-    cursor: pointer;
-    transition: .3s ease;
+    padding: 20px; /* Define o padding interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50%; /* Define o raio das bordas para 50% (botão circular) */
+    background-color: hsl(259, 100%, 65%); /* Define a cor de fundo */
+    cursor: pointer; /* Define o cursor como pointer */
+    transition: .3s ease; /* Define a transição para 0.3s */
 }
+
+/* Estilos para o botão ao passar o mouse */
 button:hover{
-    background-color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 8%); /* Altera a cor de fundo ao passar o mouse */
 }
+
+/* Estilos para o resultado */
 .resultado {
-    font-size: 80px;
-    font-weight: 800;
-    font-style: italic;
-    margin-bottom: -20px;
-    color: hsl(0, 0%, 8%);
+    font-size: 80px; /* Define o tamanho da fonte */
+    font-weight: 800; /* Define a espessura da fonte */
+    font-style: italic; /* Define o estilo da fonte como itálico */
+    margin-bottom: -20px; /* Define a margem inferior */
+    color: hsl(0, 0%, 8%); /* Define a cor do texto */
 }
+
+/* Reseta o contador para a cor especificada */
 span {
     counter-reset: hsl(259, 100%, 65%);
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 5818d7a325dc3e3fb131e2227e5851d275069513
+/* Estilos para dispositivos com largura máxima de 600px */
 @media (max-width:600px) {
     .calculadora{
-        width: 350px;
-        height: 430px;
-        padding: 30px;
-        border-bottom-right-radius: 100px;
+        width: 350px; /* Define a largura */
+        height: 430px; /* Define a altura */
+        padding: 30px; /* Define o padding interno */
+        border-bottom-right-radius: 100px; /* Define o raio da borda inferior direita */
     }
     .container{
-        width: 100%;
+        width: 100%; /* Define a largura completa */
     }
     .entradas input{ 
-        width: 90px;
-        font-size: 20px;
-        padding: 15px;
+        width: 90px; /* Define a largura */
+        font-size: 20px; /* Define o tamanho da fonte */
+        padding: 15px; /* Define o padding interno */
     }
     .erro {
-        width: 90px;
+        width: 90px; /* Define a largura */
     }
     .button {
-        margin-top: 20px;
+        margin-top: 20px; /* Define a margem superior */
     }
     button img{
-        width:  25px;
+        width:  25px; /* Define a largura da imagem dentro do botão */
     }
     .linha2 {
-        border: 1px solid hsl(0, 0%, 86%);
-        width: 100%;
+        border: 1px solid hsl(0, 0%, 86%); /* Define a cor da borda */
+        width: 100%; /* Define a largura completa */
     }
     .resultado {
-        font-size: 50px;
+        font-size: 50px; /* Define o tamanho da fonte */
     }
 }
